@@ -1,0 +1,89 @@
+C:\Users\29328\AppData\Local\Programs\Ollama
+
+cd C:\Users\29328\AppData\Local\Programs\Ollama
+
+
+ollama list
+
+
+
+安装--4.9G---CNA网络
+
+ollama run deepseek-r1:8b
+
+ollama run olmo2
+
+
+https://ollama.com/library/deepseek-r1
+
+https://ollama.com/library/olmo2
+
+
+learn
+https://www.runoob.com/ollama/ollama-run-model.html
+
+
+ui
+https://github.com/open-webui/open-webui
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+https://docs.openwebui.com/
+
+
+
+python 3.12
+D:\code_VScode\02-exed\03_py3123\00_installed
+
+
+python 3.7
+D:\46-all-robot\10-sdk-pe\sdk-demo\python370\installed
+
+python3.11
+D:\code_VScode\02-exed\05-py311\python-3.11.9
+
+
+通过命令面板修改：
+按下Ctrl+Shift+P（Windows）或Cmd+Shift+P（Mac）打开命令面板。
+输入并选择“Python: Select Interpreter”。
+在弹出的列表中选择新的Python解释器路
+
+
+安装后，使用以下命令启动服务器：
+
+open-webui serve
+
+
+清理 pip 缓存
+pip cache purge
+
+
+
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple open-webui
+
+
+
+
+git clone https://www.modelscope.cn/unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF.git
+
+
+set OLLAMA_HOST=127.0.0.1:11439
+PS D:\52-model\ollama> ollama start
+如果你不想每次启动命令行时都手动设置环境变量，你可以将其添加到系统的环境变量中。具体步骤如下：
+
+打开“环境变量”设置：
+
+右键点击 “此电脑” 或 “计算机”，选择 “属性”。
+点击 “高级系统设置”，然后点击 “环境变量”。
+添加环境变量：
+
+在 “系统变量” 中点击 “新建”，然后创建一个名为 OLLAMA_HOST 的变量，并设置其值为 127.0.0.1:11439。
+点击 “确定” 保存。
+重启命令行工具：
+
+重新启动你的命令行工具（PowerShell 或 CMD），然后输入 ollama start 来启动 Ollama。
+
+如果 pip install open-webui 成功安装但仍然无法识别命令，可以试试在安装时加入 --user 参数：
+
+pip install --user open-webui
+
+
+
