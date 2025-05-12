@@ -1,0 +1,23 @@
+.\filebrowser.exe users update admin --password 123456
+
+
+.\filebrowser.exe config init
+.\filebrowser.exe users add admin 123456 --perm.admin
+.\filebrowser.exe -r "D:\myfiles" -p 8090
+
+
+
+.\filebrower.exe -p 8090
+
+.\filebrower.exe -p 8090 --address 0.0.0.0
+
+ .\filebrowser.exe -p 8090 --address 192.168.192.198
+
+ 
+完整启动命令建议放成一个 .bat 启动脚本：
+start_filebrowser.bat 内容如下：
+
+@echo off
+filebrowser.exe -r "D:\myfiles" -p 8090 --address 0.0.0.0
+pause
+双击运行即可监听所有 IP。

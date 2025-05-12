@@ -1,0 +1,16 @@
+切换到 Nginx 目录：
+
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout cert.key -out cert.crt
+
+
+生成后将以下两个文件复制到 C:\nginx\conf\ssl\ 下，，新建文件夹ssl\
+
+
+---
+
+防火墙允许端口通过，443,8090，
+New-NetFirewallRule -DisplayName "Allow FileBrowser 8090" -Direction Inbound -Protocol TCP -LocalPort 8090 -Action Allow
+
+
+http://192.168.1.100:8090
